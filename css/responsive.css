@@ -1,0 +1,301 @@
+/*-------------Responsive css Start ---------------*/
+@media(max-width:1200px){
+	/*===pricing table css===*/
+	.price_box h4 {
+		font-size: 19px;
+	}
+	.price_box h5 {
+		font-size: 15px;
+	}
+	.price_box .price{
+		font-size: 24px;
+	}
+	.price_feature p {
+		font-size: 14px;
+		line-height: 18px;
+		padding: 20px 0;
+	}
+	/*===pricing table css===*/
+	.service_box .service_desc {
+		padding: 20px 13px;
+	}
+	.service_desc h4 {
+		font-size: 18px;
+	}
+	.service_desc p {
+		font-size: 14px;
+		line-height: 22px;
+	}
+}
+@media(min-width:992px){
+	.nav_toggle{
+		display:none;
+	}
+	.middle_menu {
+		display: block !important;
+	}
+	.page_banner_section, .home_banner_section{
+		margin-top:-6px;
+	}
+	.pl_header_section.fixed_top_menu {
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 11;
+		-webkit-animation:fromtop 1s 1;
+		-moz-animation:fromtop 1s 1;
+		animation:fromtop 1s 1;
+	}
+}
+@media(max-width:991px){
+	/*=== slider caption css start ===*/
+	.slider_caption {
+		float: left;
+		width: 100%;
+		padding: 100px 0 70px;
+	}
+	.banner_slider .owl-controls {
+		margin: 20px 0px;
+	}
+	/*=== slider caption css start ===*/
+	/*=== header top css ===*/
+	.header_top .social_icon {
+		text-align: center;
+	}
+	.header_top ul {
+		display: inline-block;
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+	.left_contact > li {
+		float: none;
+		display: inline-block;
+	}
+	/*=== header top css ===*/
+	.about_thumb {
+		margin-top: 60px;
+	}
+	/* responsive menu css */
+	.pl_header_section {
+		text-align: center;
+		padding: 15px 0 20px;
+	}
+	.nav_toggle {
+		display: inline-block;
+		position: relative;
+		margin-top: 20px;
+		cursor: pointer;
+		width: 35px;
+		height: 30px;
+	}
+	.nav_toggle i {
+		float: left;
+		width: 100%;
+		background: #ffffff;
+		height: 4px;
+		margin-bottom: 3px;
+		border-radius: 2em;
+		-webkit-transition: all 500ms cubic-bezier(0.480, 0, 0.535, 1);
+		-webkit-transition: all 500ms cubic-bezier(0.480, -0.050, 0.535, 1.370);
+		-moz-transition: all 500ms cubic-bezier(0.480, -0.050, 0.535, 1.370);
+		-o-transition: all 500ms cubic-bezier(0.480, -0.050, 0.535, 1.370);
+		transition: all 500ms cubic-bezier(0.480, -0.050, 0.535, 1.370);
+	}
+	.nav_toggle.toggle_open i:first-child {
+		transform: translateY(12px) rotate(45deg);
+		-webkit-transform: translateY(12px) rotate(45deg);
+		-moz-transform: translateY(12px) rotate(45deg);
+		-ms-transform: translateY(12px) rotate(45deg);
+		-o-transform: translateY(12px) rotate(45deg);
+		margin: 0;
+	}
+	.nav_toggle.toggle_open i:nth-child(2) {
+		transform: translateY(8px) rotate(-45deg);
+		-webkit-transform: translateY(8px) rotate(-45deg);
+		-moz-transform: translateY(8px) rotate(-45deg);
+		-ms-transform: translateY(8px) rotate(-45deg);
+		-o-transform: translateY(8px) rotate(-45deg);
+		margin: 0;
+	}
+	.nav_toggle.toggle_open i:nth-child(3) {
+		transform: translateY(-50px) rotate(90deg);
+		-webkit-transform: translateY(-50px) rotate(90deg);
+		-moz-transform: translateY(-50px) rotate(90deg);
+		-ms-transform: translateY(-50px) rotate(90deg);
+		-o-transform: translateY(-50px) rotate(90deg);
+		opacity: 0;
+		visibility: hidden;
+	}
+	.middle_menu {
+		width: 100%;
+		float: left;
+		left:0;
+		margin-top:21px;
+		display: none;
+		position: absolute;
+		background: #151515;
+		padding: 30px 20px;
+	}
+	.middle_menu > ul.menu {
+		text-align: center;
+		display: inline-block;
+		min-width: 250px;
+	}
+	.middle_menu > ul > li {
+		display:block;
+		padding: 7px 0;
+	}
+	.middle_menu > ul > li > a{
+		line-height:36px;
+	}
+	.middle_menu > ul > li > ul {
+		position: relative;
+		background-color: transparent;
+		border-top: none;
+		text-align: center;
+		width: auto;
+		z-index: 99;
+		top: 0;
+		left: 0;
+		transition: none;
+		-moz-transition: none;
+		-webkit-transition: none;
+		opacity: 1;
+		visibility: visible;
+		display:none;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+	}
+	.middle_menu > ul > li > ul > li{
+		border-bottom:none;
+	}
+	.middle_menu > ul > li > ul > li > a {
+		color: #fff;
+	}
+	.caret_down {
+		position: absolute;
+		right: 5px;
+		top: 9px;
+		text-align: center;
+		color: #fff;
+		text-align: center;
+		cursor: pointer;
+	}
+	.caret_down:before {
+		position: absolute;
+		content: "\f078";
+		display: inline-block;
+		font: normal normal normal 14px/1 FontAwesome;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		right: 0;
+		top: 0;
+		width: 25px;
+		height: 25px;
+		line-height: 23px;
+		border: 1px solid #fff;
+	}
+	.caret_down.caret_up:before {
+		content: "\f077";
+	}
+	/* responsive menu css */
+	.service_box .service_desc {
+		bottom: -31%;
+	}
+	/*=== team section ===*/
+	.team_box {
+		max-width: 270px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/*=== team section ===*/
+	.pl_sidebar {
+		margin-top: 50px;
+	}
+}
+@media(max-width:767px){
+	.request_form {
+		margin-bottom: 80px;
+	}
+	.left_contact > li {
+		width: 100%;
+		margin-right: 0;
+	}
+	.contact_form{
+		text-align:center;
+	}
+	/*==== slider caption css ====*/
+	.slider_caption h1 {
+    font-size: 30px;
+	}
+	.slider_caption h2 {
+		font-size: 24px;
+	}
+	.feature_list li i {
+		font-size: 13px;
+		padding-top: 0px;
+	}
+	.feature_list li p{
+		font-size: 13px;
+	}
+	.read_more {
+		padding: 10px 35px;
+		font-size: 13px;
+		line-height: inherit;
+	}
+	.slider_caption {
+		padding: 70px 0 50px;
+	}
+	.slider_caption .slider_btn {
+		text-align: center;
+	}
+	.slider_btn .read_more {
+		margin: 10px 3px 0 3px;
+	}
+	/*==== slider caption css ====*/
+	.pl_blog_post_section .blog_item_wrapper {
+		display: table;
+		width: auto;
+		max-width: 555px;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+	}
+}
+@media(max-width:480px){
+	.about_box {
+		text-align: center;
+	}
+	.about_box .box_title > div {
+		display: table;
+		width: 100%;
+	}
+	.about_box .box_title h4 {
+		margin-top: 15px;
+	}
+	.specific_comment .right_avtar_details {
+		padding-left: 0;
+		float: left;
+		width: 100%;
+		padding-top: 15px;
+	}
+	#comments ul li ul {
+		padding-left: 0px;
+	}
+	.right_avtar_details .cmt_title .comment-author {
+		display: block;
+	}
+	.right_avtar_details .cmt_title span {
+		display: block;
+		margin: 5px 0px;
+	}
+	.cmt_title .reply_link {
+		float: none;
+	}
+}
+/*-------------Responsive css End ---------------*/
